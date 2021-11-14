@@ -1,3 +1,4 @@
+import { CoursesService } from './courses.service';
 import { Component } from "@angular/core";
 
 @Component({
@@ -13,7 +14,12 @@ import { Component } from "@angular/core";
 
 export class CoursesComponent {
     title = "List of templates";
-    courses = ["title1", "title2", "title3"];
+    courses;
+
+    constructor(service: CoursesService) {
+        this.courses = service.getCourses();
+    }
+
     getTitle() {
         return this.title;
     }
