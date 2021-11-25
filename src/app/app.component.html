@@ -2,7 +2,14 @@
   <head></head>
   <body>
     <h2>Hello Angular</h2>
-    <courses></courses>
-    <favorite></favorite>
+    <!-- <courses></courses> -->
+    <!-- <favorite [isFavorite]="post.isFavorite" (change)="onFavoriteChange()"></favorite> -->
+    <panel>
+      <ng-container class="body">
+        <h2>Body</h2>
+        <p>Some content...</p>
+      </ng-container>
+      <ng-container class="heading">Heading</ng-container>
+    </panel>
   </body>
 </html>
