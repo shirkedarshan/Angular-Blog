@@ -1,0 +1,9 @@
+<div>
+    <h3>Favorite Component</h3>
+    <span class="glyphicon"
+        [class.glyphicon-star]="starClass"
+        [class.glyphicon-star-empty]="!starClass"
+        aria-hidden="true" 
+        (click)=clickStar()
+    ></span>
+</div>
