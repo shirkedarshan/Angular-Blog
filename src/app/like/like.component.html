@@ -1,0 +1,8 @@
+<p>like works!</p>
+<span class="glyphicon glyphicon-heart"
+        [class.isHighlighted]="isLiked"
+        [ngStyle] = "{color:isLiked == true ? 'red' : '#ccc'}"
+        (click)= "clickLike()"
+></span>
+<span>__</span>
+<span>{{likesCount}}</span>

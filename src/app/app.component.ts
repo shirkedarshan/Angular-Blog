@@ -13,6 +13,11 @@ export class AppComponent {
     console.log("Favourite changed");
   }
 
+  tweet = {
+    body: "",
+    isLiked: false,
+    likesCount: 0
+  }
 
   post= {
     title : "Title",
