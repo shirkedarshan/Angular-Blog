@@ -9,13 +9,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  onFavoriteChange(){
-    console.log("Favourite changed");
-  }
-
-
-  post= {
-    title : "Title",
-    isFavorite : false
-  }
 }
