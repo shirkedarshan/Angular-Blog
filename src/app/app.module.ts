@@ -7,6 +7,8 @@ import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
+import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { PanelComponent } from './panel/panel.component';
     CourseComponent,
     CoursesComponent,
     FavoriteComponent,
-    PanelComponent
+    PanelComponent,
+    NewCourseFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     CoursesService
